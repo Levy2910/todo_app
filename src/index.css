@@ -1,13 +1,114 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(
+    to right top,
+    #fad4d4,
+    #f8c7c7,
+    #f5bab9,
+    #f2acac,
+    #ef9f9f
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Indie Flower", cursive;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.content {
+  border: 3px solid #fad4d4;
+  margin-top: 10em;
+  padding: 1em 5em 10em;
+  border-radius: 10px;
+}
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+h3 {
+  color: #4c3575;
+  margin-bottom: 3em;
+  text-align: center;
+  font-size: 1.5em;
+}
+input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-right: 2px;
+  background-color: #dbdffd;
+  border: none;
+  cursor: pointer;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3em;
+}
+::placeholder {
+  color: #827397;
+  font-family: "Indie Flower", cursive;
+  padding: 2em 0;
+}
+.add {
+  border: none;
+  border-radius: 30px;
+  color: #4c3575;
+  padding: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fad4d4;
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3em;
+}
+input:focus {
+  outline: none;
+  border: 3px solid #4c3575;
+  transition: all ease-in-out 100ms;
+  font-family: "Indie Flower", cursive;
+}
+li {
+  background-color: #fad4d4;
+  list-style: none;
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+  color: #5b4b8a;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.crossed {
+  text-decoration: line-through #827397 2px;
+}
+
+li button {
+  border: none;
+  background-color: #fad4d4;
+  cursor: pointer;
+}
+li .delete {
+  position: absolute;
+  right: 0;
+  color: #827397;
+}
+li .tick {
+  position: absolute;
+  right: 2em;
+  color: #827397;
+}
+h3 {
+  margin-top: 50px;
 }
